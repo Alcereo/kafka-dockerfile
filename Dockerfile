@@ -15,6 +15,7 @@ RUN curl -O -J -L http://apache-mirror.rbc.ru/pub/apache/kafka/1.0.1/kafka_2.11-
 tar -xf /kafka_2.11-1.0.1.tgz && \
 rm -rf /kafka_2.11-1.0.1.tgz; \
 chmod +x /entrypoint.sh; \
+curl https://drive.google.com/file/d/1wpEVASMVjW1XCXZLobges9xxhGRWkQE0/view?usp=sharing -o /kafka-influxdb-metrics-reporter-0.1.0-shaded.jar && \
 mv /kafka-influxdb-metrics-reporter-0.1.0-shaded.jar /kafka_2.11-1.0.1/libs/
 
 
